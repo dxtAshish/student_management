@@ -11,7 +11,7 @@ export default function GetStudent() {
       }, []);
 
    const fetchStudent= async() => {
-      // Fetch all students from the backend API
+      // fetch all students 
         
       const headers = {
         "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export default function GetStudent() {
        
     
     const handleDelete = (studentId) => {
-        // Make a DELETE request to the backend API
+        // make a DELETE request 
         fetch(`http://localhost:5000/api/deletestudent/${studentId}`, {
           method: 'DELETE',
         })

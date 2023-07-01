@@ -9,7 +9,7 @@ export default function Search() {
     }, []);
 
  const fetchStudent= async() => {
-    // Fetch all students from the backend API
+    // Fetch all students
       
     const headers = {
       "Content-Type": "application/json",

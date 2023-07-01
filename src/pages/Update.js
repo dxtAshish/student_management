@@ -13,7 +13,7 @@ export default function Update() {
       const { id } = useParams();
     
       useEffect(() => {
-        // Fetch student details from the backend API
+        // Fetch student details 
         fetch(`http://localhost:5000/api/getstudent/${id}`)
           .then((response) => response.json())
           .then((data) => {
@@ -34,7 +34,7 @@ export default function Update() {
       const handleUpdate = (event) => {
         event.preventDefault()
         console.log(36)
-        // Make a PUT request to the backend API to update the student
+        // Make a PUT request 
         fetch(`http://localhost:5000/api/updatestudent/${id}`, {
           method: 'PUT',
           headers: {
